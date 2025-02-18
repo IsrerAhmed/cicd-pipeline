@@ -26,5 +26,5 @@ jobs:
       run: docker build -t isrerahmed17427/cicd-pipeline:${{ github.sha }} -t isrerahmed17427/cicd-pipeline/cicd-pipeline:latest .
     - name: Push to Dockerhub
       run: |
-        docker push isrerahmed17427/cicd-pipeline/cicd-pipeline:${{ github.sha }}
-        docker push isrerahmed17427/cicd-pipeline/cicd-pipeline:latest
+        docker push isrerahmed17427/cicd-pipeline:${{ github.sha }}
+        docker push isrerahmed17427/cicd-pipeline:latest
